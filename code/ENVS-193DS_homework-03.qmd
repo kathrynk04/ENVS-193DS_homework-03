@@ -58,3 +58,21 @@ ggplot(data = my_data,
 ## c. Caption
 
 Figure 1: Time spent studying in minutes across caffeine consumption time relative to studying. Points are colored according to whether caffeine was consumed before studying, during studying, after studying, or not at all.
+
+## d. Table presentation
+
+```{r message = FALSE}
+ft <- my_data |> 
+  select(consumed_before_during_after_working, time_spent_working_min) |> 
+  group_by(consumed_before_during_after_working) |> 
+  summarize(mean_time_spent_studying = mean(time_spent_working_min, na.rm = FALSE)) 
+
+ft$mean_time_spent_studying <- round(ft$mean_time_spent_studying, 1)
+
+flextable(ft) |> 
+  set_header_labels(ft,
+                    consumed_before_during_after_working = "Caffeine Consumption Time Relative to Studying",
+                    mean_time_spent_studying = "Average Time Spent Studying (min)") |> 
+  set_table_properties(layout = "autofit")
+```
+
