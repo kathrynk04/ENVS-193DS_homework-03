@@ -13,3 +13,8 @@ library(janitor)
 library(readxl)
 ```
 
+# Problem 1: Personal data
+
+## a. Data summarizing
+
+I could calculate the mean number of minutes I spent studying to compare average time spent studying between days that I consume caffeine and days that I don't because caffeine energizes me, so I think I spend more time studying on days that I consume caffeine. On days that I don't drink caffeine, I think I'm more likely to do more low-energy activities than studying because studying requires more concentration and effort.
