@@ -1,0 +1,15 @@
+---
+title: "ENVS-193DS_homework-03"
+format: html
+---
+
+Github repo: https://github.com/kathrynk04/ENVS-193DS_homework-03.git
+
+```{r message=FALSE}
+library(tidyverse)
+library(here)
+library(flextable)
+library(janitor)
+library(readxl)
+```
+
