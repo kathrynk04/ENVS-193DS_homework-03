@@ -24,14 +24,21 @@ I could calculate the mean number of minutes I spent studying to compare average
 ```{r message=FALSE}
 my_data <- read_csv(
   here("data", "my_data.csv")) |> 
-  clean_names() 
+  clean_names() |> 
+  mutate(consumed_before_during_after_working = as_factor(consumed_before_during_after_working),
+         consumed_before_during_after_working = fct_relevel(consumed_before_during_after_working,
+                                    "None",
+                                    "Before",
+                                    "During",
+                                    "After")) 
 
 ggplot(data = my_data,
        aes(x = consumed_before_during_after_working,
            y = time_spent_working_min,
            color = consumed_before_during_after_working)) +
   labs(x = "Caffeine Consumption Time Relative to Studying",
-       y = "Time Spent Studying (min)") +
+       y = "Time Spent Studying (min)",
+       title = "Time Spent Studying Across Caffeine Consumption Time Relative to Studying") +
   geom_jitter(width = 0.1,
               height = 0,
               shape = 21,
@@ -41,10 +48,13 @@ ggplot(data = my_data,
                size = 4) +
   scale_color_manual(values = c("None" = "red",
                                 "Before" = "orange",
-                                "During" = "yellow",
-                                "After" = "green")) +
+                                "During" = "green",
+                                "After" = "blue")) +
   theme(legend.position = "none")
 
 
 ```
 
+## c. Caption
+
+Figure 1: Time spent studying in minutes across caffeine consumption time relative to studying. Points are colored according to whether caffeine was consumed before studying, during studying, after studying, or not at all.
