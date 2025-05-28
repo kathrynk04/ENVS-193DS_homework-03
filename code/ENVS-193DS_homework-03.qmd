@@ -88,3 +88,6 @@ An affective visualization of my personal data could look like
 
 The statistical test included in this paper is the Mann-Whitney U test. The response variables are demographic stability, public utilities, and socio-economic stability. The predictor variable is the presence or absence of tourist arrivals.
 
+## b. Visual clarity
+
+The table could be more clear by having a more detailed caption that explains what "N", "Mean", and "Mean Rank" mean in the context of this statistical test and by renaming the rows to "Demographic Stability 2001-2007" and "Demographic Stability 2008-2016" so that readers would know what "Dem_Stab" stands for without having to read the text surrounding the table. Include Mann-Whitney U test statistic and p-values?
