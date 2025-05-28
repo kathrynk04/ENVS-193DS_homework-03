@@ -78,3 +78,13 @@ flextable(ft) |>
 
 # Problem 2: Affective visualization
 
+## a. Describe in words what an affective visualization could look like for your personal data
+
+An affective visualization of my personal data could look like
+
+# Problem 3: Statistical critique
+
+## a. Revisit and summarize
+
+The statistical test included in this paper is the Mann-Whitney U test. The response variables are demographic stability, public utilities, and socio-economic stability. The predictor variable is the presence or absence of tourist arrivals.
+
