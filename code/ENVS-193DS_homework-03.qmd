@@ -22,42 +22,40 @@ I could calculate the mean number of minutes I spent studying to compare average
 ## b. Visualization
 
 ```{r message=FALSE}
-my_data <- read_csv(
-  here("data", "my_data.csv")) |> 
-  clean_names() |> 
-  mutate(consumed_before_during_after_working = as_factor(consumed_before_during_after_working),
-         consumed_before_during_after_working = fct_relevel(consumed_before_during_after_working,
+my_data <- read_csv( # reading in the csv file
+  here("data", "my_data.csv")) |> # telling R where the file is located
+  clean_names() |> # cleaning the names
+  mutate(consumed_before_during_after_working = as_factor(consumed_before_during_after_working), # making when the caffeine was consumed relative to studying a factor
+         consumed_before_during_after_working = fct_relevel(consumed_before_during_after_working, # changing the factor orders
                                     "None",
                                     "Before",
                                     "During",
                                     "After")) 
 
-ggplot(data = my_data,
-       aes(x = consumed_before_during_after_working,
-           y = time_spent_working_min,
-           color = consumed_before_during_after_working)) +
-  labs(x = "Caffeine Consumption Time Relative to Studying",
-       y = "Time Spent Studying (min)",
-       title = "Time Spent Studying Across Caffeine Consumption Time Relative to Studying") +
-  geom_jitter(width = 0.1,
-              height = 0,
-              shape = 21,
-              alpha = 0.6) +
-  stat_summary(geom = "point",
-               fun = mean,
-               size = 4) +
-  scale_color_manual(values = c("None" = "red",
+ggplot(data = my_data, # creating the data frame
+       aes(x = consumed_before_during_after_working, # setting time caffeine was consumed relative to studying as the x-axis
+           y = time_spent_working_min, # setting the time spent working as the y-axis
+           color = consumed_before_during_after_working)) + # coloring by time caffeine was consumed relative to studying
+  labs(x = "Caffeine Consumption Time Relative to Studying", # labeling the x-axis
+       y = "Time Spent Studying (min)", # labeling the y-axis
+       title = "Time Spent Studying Across Caffeine Consumption Time Relative to Studying") + # creating the title
+  geom_jitter(width = 0.1, # creating the jitter plot and setting width as 0.1
+              height = 0, # getting rid of vertical jitter
+              shape = 21, # making the data points empty circles
+              alpha = 0.6) + # setting the transparency of data points
+  stat_summary(geom = "point", # including points in each relative time
+               fun = mean, # putting the points where the mean time spent studying is
+               size = 4) + # adjusting the point size
+  scale_color_manual(values = c("None" = "red", # setting the colors of each group
                                 "Before" = "orange",
                                 "During" = "green",
                                 "After" = "blue")) +
-  theme(legend.position = "none")
-
-
+  theme(legend.position = "none") # removing the legend
 ```
 
 ## c. Caption
 
-Figure 1: Time spent studying in minutes across caffeine consumption time relative to studying. Points are colored according to whether caffeine was consumed before studying, during studying, after studying, or not at all.
+Figure 1: Time spent studying in minutes across caffeine consumption time relative to studying. Points are colored according to whether caffeine was consumed before studying, during studying, after studying, or not at all. The small circles that aren't filled in are the data points and the large, filled in circles are the mean time spent studying in minutes for each relative caffeine consumption time.
 
 ## d. Table presentation
 
