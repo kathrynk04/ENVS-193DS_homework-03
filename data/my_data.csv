@@ -19,7 +19,7 @@ Date,Caffeine consumed (mg),Time spent working (min),Time spent sleeping (min),C
 4/20/2025,0,415,570,None,0,0
 4/23/2025,225,431.47,420,During,0,2
 5/8/2025,150,89.4,540,Before,0,5
-5/9/2025,0,153.65,720,After,0,1
+5/9/2025,150,153.65,720,After,0,1
 5/10/2025,150,125.02,600,During,0,0
 5/11/2025,275,90,480,During,0,0
 5/12/2025,0,55.35,420,None,0,3
@@ -38,4 +38,4 @@ Date,Caffeine consumed (mg),Time spent working (min),Time spent sleeping (min),C
 5/25/2025,0,0,540,None,0,0
 5/26/2025,0,0,540,None,0,0
 5/27/2025,150,307.1,660,During,24.47,2
-5/28/2025,90,,540,During,,2
+5/28/2025,90,202,540,During,0,2

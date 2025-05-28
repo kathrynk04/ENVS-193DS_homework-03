@@ -60,18 +60,18 @@ Figure 1: Time spent studying in minutes across caffeine consumption time relati
 ## d. Table presentation
 
 ```{r message = FALSE}
-ft <- my_data |> 
-  select(consumed_before_during_after_working, time_spent_working_min) |> 
-  group_by(consumed_before_during_after_working) |> 
-  summarize(mean_time_spent_studying = mean(time_spent_working_min, na.rm = FALSE)) 
+ft <- my_data |> # making an object named "ft" with my data in it
+  select(consumed_before_during_after_working, time_spent_working_min) |> # selecting for time caffeine was consumed relative to studying and time spent working
+  group_by(consumed_before_during_after_working) |> # grouping by time caffeine was consumed relative to studying
+  summarize(mean_time_spent_studying = mean(time_spent_working_min, na.rm = FALSE)) # calculating the mean time spent studying for each group
 
-ft$mean_time_spent_studying <- round(ft$mean_time_spent_studying, 1)
+ft$mean_time_spent_studying <- round(ft$mean_time_spent_studying, 1) # rounding numbers to 1 decimal place
 
-flextable(ft) |> 
-  set_header_labels(ft,
+flextable(ft) |> # creating a flextable of my "ft" object
+  set_header_labels(ft, # renaming the header labels
                     consumed_before_during_after_working = "Caffeine Consumption Time Relative to Studying",
                     mean_time_spent_studying = "Average Time Spent Studying (min)") |> 
-  set_table_properties(layout = "autofit")
+  set_table_properties(layout = "autofit") # setting the table layout to "autofit"
 ```
 
 # Problem 2: Affective visualization
