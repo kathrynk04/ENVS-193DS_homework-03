@@ -90,4 +90,4 @@ The statistical test included in this paper is the Mann-Whitney U test. The resp
 
 ## b. Visual clarity
 
-The table could be more clear by having a more detailed caption that explains what "N", "Mean", and "Mean Rank" mean in the context of this statistical test and by renaming the rows to "Demographic Stability 2001-2007" and "Demographic Stability 2008-2016" so that readers would know what "Dem_Stab" stands for without having to read the text surrounding the table. Include Mann-Whitney U test statistic and p-values?
+The table could be more clear by having a more detailed caption that explains what "N", "Mean", and "Mean Rank" mean in the context of this statistical test and by renaming the rows to "Demographic Stability 2001-2007" and "Demographic Stability 2008-2016" so that readers would know what "Dem_Stab" stands for without having to read the text surrounding the table. It would also be more clear if the test statistics and p-values for both time periods so that readers know the results of the test without having to refer to the text around it.
