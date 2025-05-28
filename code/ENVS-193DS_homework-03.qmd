@@ -76,3 +76,5 @@ flextable(ft) |>
   set_table_properties(layout = "autofit")
 ```
 
+# Problem 2: Affective visualization
+
