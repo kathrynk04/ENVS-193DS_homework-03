@@ -84,7 +84,7 @@ An affective visualization of my personal data could look like multiple sheets o
 
 ![](images/sketch.png)
 
-## c. 
+## c.
 
 ## d. Write an artist statement
 
@@ -96,6 +96,8 @@ My piece is showing how much time I spent studying and how much caffeine I consu
 
 The statistical test included in this paper is the Mann-Whitney U test. The response variables are demographic stability, public utilities, and socio-economic stability. The predictor variable is the presence or absence of tourist arrivals.
 
+![](images/Mann-Whitney U Figure.png)
+
 ## b. Visual clarity
 
 The table could be more clear by having a more detailed caption that explains what "N", "Mean", and "Mean Rank" mean in the context of this statistical test and by renaming the rows to "Demographic Stability 2001-2007" and "Demographic Stability 2008-2016" so that readers would know what "Dem_Stab" stands for without having to read the text surrounding the table. It would also be more clear if the test statistics and p-values for both time periods so that readers know the results of the test without having to refer to the text around it.
@@ -106,4 +108,4 @@ The authors reduced "visual clutter" by labeling the top of each column in bold,
 
 ## d. Recommendations
 
-I would make the row labels bold so that it's more clear that the values in each row represent the time period in the same row, and I would also add lines between each column to make it even more clear which column each value is in. I would add two new rows, one that includes the test statistic for each period and one that includes the p-value for each period, so that it's easier for readers to find those values without having to refer to the text. I would change the row periods into a more readable format like "Demographic Stability 2001-2007" and I would describe what "N", "Mean", "Mean Rank", the test statistics, and the p-values are in the table caption so that readers that are unfamiliar with Mann-Whitney U tests know what the values represent.
+I would make the row labels bold so that it's more clear that the values in each row represent the time period in the same row, and I would also add lines between each column to make it even more clear which column each value is in. I would add two new rows, one that includes the test statistic for each period and one that includes the p-value for each period, so that it's easier for readers to find those values without having to refer to the text. I would change the row periods into a more readable format like "Demographic Stability 2001-2007" and I would describe what "N", "Mean", "Mean Rank", the test statistics, and the p-values are in the table caption so that readers that are unfamiliar with Mann-Whitney U tests know what the values represent. Lastly, I would also include their values for alpha so that readers know what value the authors used to determine if their p-values were significant.
