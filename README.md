@@ -6,15 +6,15 @@ The dataset used in this repository was created by Kathryn Kolb in 2025. This re
 
 ## Data and File Information
 
-├── code                                     # code folder
-│   ├── ENVS-193DS_homework-03_files
-|   |── images
-│   ├── ENVS-193DS_homework-03.html
-│   └── ENVS-193DS_homework-03.qmd     
-├── data                                     # data folder
-|   └── my_data.csv 
-├── ENVS-193DS_homework-03.Rproj
-└── README.md
+├── code                                     # code folder                                                                     
+│   ├── ENVS-193DS_homework-03_files                                                                                           
+|   |── images                                                                                                                 
+│   ├── ENVS-193DS_homework-03.html                                                                                            
+│   └── ENVS-193DS_homework-03.qmd                                                                                             
+├── data                                     # data folder                                                                     
+|   └── my_data.csv                                                                                                            
+├── ENVS-193DS_homework-03.Rproj                                                                                               
+└── README.md                                                                                                                  
 
 ## Rendered Output
 The rendered key is 
