@@ -84,7 +84,9 @@ An affective visualization of my personal data could look like multiple sheets o
 
 ![](images/sketch.png)
 
-## c.
+## c. Make a draft of your visualization
+
+![](images/Scanned Documents (1)-1.png)
 
 ## d. Write an artist statement
 
@@ -96,7 +98,7 @@ My piece is showing how much time I spent studying and how much caffeine I consu
 
 The statistical test included in this paper is the Mann-Whitney U test. The response variables are demographic stability, public utilities, and socio-economic stability. The predictor variable is the presence or absence of tourist arrivals.
 
-![](images/Mann-Whitney U Figure.png)
+![](images/Mann-Whitney%20U%20Figure.png)
 
 ## b. Visual clarity
 
